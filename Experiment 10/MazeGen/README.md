@@ -1,5 +1,6 @@
 # MazeGen
 A program for generating mazes and solving it with use of A* star path finding algorithm
+![Sample](./img1.png)
 
 ## Table of Contents
 - [Installation] 

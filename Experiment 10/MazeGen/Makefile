@@ -1,11 +1,11 @@
 all: clean run
 
-run :
-	g++ -c *.cpp
-	g++ *.o -o app -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+run:
+	g++ -c *.cpp -I/opt/sfml2/include -std=c++17
+	g++ *.o -o app -L/opt/sfml2/lib -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 
-clean : 
-	rm *.o app | echo ""
+clean:
+	rm -f *.o app
 
-cleanup :
-	rm *.o
+cleanup:
+	rm -f *.o
